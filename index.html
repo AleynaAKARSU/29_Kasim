@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="demo"></h1>
+    <input value="" id="inputValue" oninput="degerGetir()" />
+    <h1 id="demoGirilenDeger"></h1>
+    <h2 id="sonuc"></h2>
+    <h2 id="sonuc2"></h2>
+    <h2 id="sonuc3"></h2>
+    <h2 id="list"></h2>
+    <h2 id="list2"></h2>
+
+    <script>
+      var sayi = 5;
+      if (sayi > 10) {
+        document.getElementById("demo").innerHTML = "hayır";
+      } else {
+        document.getElementById("demo").innerHTML = "evet";
+      }
+      function degerGetir() {
+        var inputValueInfo = document.getElementById("inputValue").value;
+        document.getElementById("demoGirilenDeger").innerHTML = inputValueInfo;
+        if (sayi > inputValueInfo) {
+          document.getElementById("sonuc").innerHTML =
+            "Girdiğiniz sayı 5 den küçük";
+        } else {
+          // sayi< inputValueInfo =>else kısmı buna karşılık geliyor
+          document.getElementById("sonuc").innerHTML =
+            "Girdiğiniz sayı 5 den küçük değil!";
+        }
+        if (sayi > inputValueInfo) {
+          document.getElementById("sonuc2").innerHTML =
+            "Girdiğiniz sayı 5 den küçük";
+        } else if (sayi == inputValueInfo) {
+          document.getElementById("sonuc2").innerHTML =
+            "Girdiğiniz sayı 5 e eşit";
+        } else {
+          document.getElementById("sonuc2").innerHTML =
+            "Girdiğiniz sayı 5 den küçük değil!";
+        }
+        sayi > inputValueInfo
+          ? (document.getElementById("sonuc3").innerHTML =
+              "Girdiğiniz sayı 5 den küçük")
+          : (document.getElementById("sonuc3").innerHTML =
+              "Girdiğiniz sayı 5 den küçük değil");
+
+              /* Yukarıdaki   sayi > inputValueInfo
+          ? (document.getElementById("sonuc3").innerHTML =
+              "Girdiğiniz sayı 5 den küçük")
+          : (document.getElementById("sonuc3").innerHTML =
+              "Girdiğiniz sayı 5 den küçük değil")
+              kodun karşılığı 
+  if (sayi > inputValueInfo) {
+          document.getElementById("sonuc").innerHTML =
+            "Girdiğiniz sayı 5 den küçük";
+        } else {
+          // sayi< inputValueInfo =>else kısmı buna karşılık geliyor
+          document.getElementById("sonuc").innerHTML =
+            "Girdiğiniz sayı 5 den küçük değil!";
+        }
+
+              */
+
+
+      }
+/*var sayi2= prompt('Koşul ifadesi içi girilecek değer')
+
+if(sayi2==1){
+    console.log("sayi 1")
+
+}
+else if(sayi2==2){
+    console.log("sayi 2")
+
+}
+else if(sayi2==3){
+    console.log("sayi 3")
+
+}
+else if(sayi2==4){
+    console.log("sayi 4")
+
+}
+else if(sayi2==5){
+    console.log("sayi 5")
+
+}
+else if(sayi2==6){
+    console.log("sayi 6")
+
+    
+}else if(sayi2==7){
+    console.log("sayi 7")
+
+    
+}
+else if(sayi2==8){
+    console.log("sayi 8")
+
+    
+}
+else if(sayi2==9){
+    console.log("sayi 9")
+
+}
+else {
+console.log("sayi 10 dan büyük")
+}*/
+/*var kullanicidanAlinandDeger = prompt("1- 10 a kadar aklımdan bir sayı tuttum, bu sayıyıy bilin", "")
+switch(kullanicidanAlinandDeger){
+    case "1": alert("Sayı 1")
+    break;
+    case "2": alert("Sayı 2")
+    break;
+    case "3": alert("Sayı 3")
+    break;
+    case "4": alert("Sayı 4")
+    break;
+    case "5": alert("Sayı 5")
+    break;
+    case "6": alert("Sayı 6")
+    break;
+    case "7": alert("Sayı 7")
+    break;
+    case "8": alert("Sayı 8")
+    break;
+    case "9": alert("Sayı 9")
+default:
+    alert ('sayi 10 veya 10 dan büyük ')
+}
+var yazMeyvesi = "elma"
+switch(yazMeyvesi){
+    case "elma":alert("yaz meyvesi değil")
+    break
+    case "armut":alert("yaz meyvesi değil")
+    break;
+    case "kabun":alert("yaz meyvesi")
+    break;
+    default:
+        alert("yaz meyvesi yok")
+
+
+}*/
+/*var yazMeyvesi = prompt("Harfler","")
+switch(yazMeyvesi){
+    case "a":alert("a harfini girdiniz")
+    break
+    case "b":alert("b harfini girdiniz")
+    break;
+    case "c":alert("c harfini girdiniz")
+    break;
+    case "d":alert("d harfini girdiniz")
+    break;
+    case "e":alert("e harfini girdiniz")
+    break;
+    default:
+        alert("farklı bir harf girdiniz", yazMeyvesi)
+
+
+}*/
+
+var sayi2=10
+while (sayi2<100){
+
+document.write(sayi2 + '<br/>')
+sayi2=sayi2+1;
+
+}
+for(sayi3= 80 ; sayi3<100 ; sayi3++){
+    document.write(`<h1>${sayi3}  </h1>`)
+
+
+}
+var kisiler = [
+                {
+                  id: 0,
+                  adi: "Zeynep",
+                  soyadi: "Bıçak",
+                  yaş: 15,
+                  cinsiyet: "Kadin",
+                  unvani: "Öğrenci",
+                  puan: 65,
+                  img: 'download.jpeg'
+                },
+                {
+                  id: 1,
+                  adi: "Ayşe",
+                  soyadi: "Yılmaz",
+                  yaş: 15,
+                  cinsiyet: "Kadin",
+                  unvani: "Öğrenci",
+                  puan: 75,
+                  img: 'download.jpeg'
+
+                },
+                {
+                  id: 2,
+                  adi: "Ece",
+                  soyadi: "Derin",
+                  yaş: 32,
+                  cinsiyet: "Kadin",
+                  unvani: "Öğrenci",
+                  puan: 85,
+                  img: 'download.jpeg'
+
+                },
+                {
+                  id: 3,
+                  adi: "Veli",
+                  soyadi: "Deneme",
+                  yaş: 26,
+                  cinsiyet: "Erkek",
+                  unvani: "Öğrenci",
+                  puan: 75,
+                  img: 'download.jpeg'
+
+                },
+                {
+                  id: 4,
+                  adi: "Ali",
+                  soyadi: "Soyad",
+                  yaş: 52,
+                  cinsiyet: "Erkek",
+                  unvani: "Öğrenci",
+                  puan: 95,
+                  img: 'download.jpeg'
+
+                },
+              ];
+              console.log(kisiler[0].adi)
+              console.log(kisiler[1].adi)
+              console.log(kisiler.length)
+
+
+var i=0
+while(i<kisiler.length){
+    document.getElementById('list').innerHTML+= kisiler[i].adi
+    i++
+}
+for ( i =0 ; i<kisiler.length; i++){
+    document.getElementById('list2').innerHTML+= kisiler[i].adi 
+
+}
+
+    </script>
+  </body>
+</html>
